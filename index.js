@@ -7,7 +7,7 @@ const collection = require("./mongodb")
 const tempelatePath = path.join(__dirname,'../tempelates')
 
 app.use(express.json())
-app.set("view engine", hbs)
+app.set("view engine", "hbs")
 app.set("views",tempelatePath)
 app.use(express.urlencoded({extended:false}))
 
